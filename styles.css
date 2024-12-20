@@ -19,6 +19,14 @@ body {
     position: absolute;
     cursor: pointer;
 }
+.mushroom.good {
+     background-image: url('./mach_good2.jpg');
+    background-size: cover;
+}
+  background-image: url('images/mush_bed2.png'); /* Путь к картинке для плохого гриба */
+  background-size: cover;
+}
+
 #scoreboard {
     display: flex;
     justify-content: space-around;
