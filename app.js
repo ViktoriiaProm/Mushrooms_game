@@ -10,7 +10,7 @@ async function fetchMushrooms(){
     try {
         const response = await fetch('https://raw.githubusercontent.com/Viktoriia-P-H11/Mushrooms_game/main/data.json');
         const data = await response.json();
-        mushroomsData = data.mushrooms;
+        MushroomsData = data.mushrooms;
     }
      catch (error) {
         console.error('problem with json:', error);
@@ -18,7 +18,7 @@ async function fetchMushrooms(){
 }
 function creatMushroom() {
     if (!MushroomsData.length) return;
-    const mushroomInfo = mushroomsData[Math.floor(Math.random() * mushroomsData.length)];
+    const mushroomInfo = MushroomsData[Math.floor(Math.random() * MushroomsData.length)];
     const mushroom = document.createElement('div');
     mushroom.classList.add('mushroom');
     mushroom.style.backgroundImage = `url('${mushroomInfo.image}')`;
