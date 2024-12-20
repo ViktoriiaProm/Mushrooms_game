@@ -50,7 +50,10 @@ mushroom.addEventListener('click', () => {
     } else {
         lives -= parseInt(mushroom.dataset.damage);
     }
-    updateScoreboard();
+    updateScoreboard() {
+            scoreDisplay.textContent = score;
+    livesDisplay.textContent = lives;
+    }
     if (lives <= 0) endGame();
 });
 }
