@@ -8,7 +8,7 @@
         },
         {
             "type": "bad",
-            "image": "./mach_bed.jpg",
+            "image": "./mash_bed.jpg",
             "score":0,
             "damage":1
         }
