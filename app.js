@@ -20,10 +20,11 @@ async function fetchMushrooms() {
 
 function createMushroom() {
     if (!MushroomsData.length) return;
+
     const mushroomInfo = MushroomsData[Math.floor(Math.random() * MushroomsData.length)];
     const mushroom = document.createElement('div');
     mushroom.classList.add('mushroom');
-    mushroom.style.backgroundImage = `url('${mushroomInfo.image}')`;
+    mushroom.classList.add(mushroomInfo.type);  // Добавление класса для типа гриба
     mushroom.dataset.type = mushroomInfo.type;
     mushroom.dataset.score = mushroomInfo.score || 0;
     mushroom.dataset.damage = mushroomInfo.damage || 0;
