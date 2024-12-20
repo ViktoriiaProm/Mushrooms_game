@@ -10,7 +10,7 @@ let MushroomsData = [];
 
 async function fetchMushrooms() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/Viktoriia-P-H11/Mushrooms_game/main/data.json');
+        const response = await fetch('https://raw.githubusercontent.com/Viktoriia-P-H11/Mushrooms_game/refs/heads/main/data.json');
         const data = await response.json();
         MushroomsData = data.mushrooms;
     } catch (error) {
