@@ -8,7 +8,7 @@ let gameInterval;
 let MushroomsData=[];
 async function fetchMushrooms(){
     try {
-        const response = await fetch('https://github.com/Viktoriia-P-H11/Mushrooms_game/blob/main/data.json');
+        const response = await fetch('https://raw.githubusercontent.com/Viktoriia-P-H11/Mushrooms_game/main/data.json');
         const data = await response.json();
         mushroomsData = data.mushrooms;
     }
